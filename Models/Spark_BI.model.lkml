@@ -3,7 +3,7 @@ connection: "spark_bi"
 include: "/Views/*.view.lkml"
 
 explore: spark_bi_unified {
-  label: "Spark BI – Unified Analytics1"
+  label: "Spark BI – Unified Analytics"
   from: sales_data
   view_name: sales_data
 
