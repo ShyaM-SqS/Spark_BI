@@ -56,8 +56,7 @@ explore: sales_data {
     type: left_outer
     relationship: one_to_many
     sql_on: ${sales_data.sku} = ${social_trends.related_sku}
-            OR (${sales_data.category} = ${social_trends.related_category}
-                AND ${sales_data.timestamp_date} = ${social_trends.event_date}) ;;
+            OR (${sales_data.category} = ${social_trends.related_category}) ;;
   }
 }
 
